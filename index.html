@@ -9,7 +9,7 @@
     <meta name="keywords" content="neutron, app, development, visual dev, no-code, low-code, startup" />
     <meta name="author" content="Neutron Technologies, Inc." />
     <meta name="p:domain_verify" content="2f1eda881081bd5960ab052f2b6e2ff7" />
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com/"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <style>
       .gradient {
@@ -90,7 +90,8 @@
           <h3 class="uppercase tracking-loose w-full">Visual app development</h3>
           <h1 class="w-full my-4 text-5xl font-bold leading-tight">Build faster • Save money</h1>
           <p class="w-full leading-normal text-2xl mb-8">
-            Neutron helps startups save $100K+ yearly, by making it <b>easy</b>, <b>cheap</b>, and <b>quick</b> to build well-designed apps, without code or design skills.
+            Neutron helps startups save $100K+ yearly, by making it <b>easy</b>, <b>cheap</b>, and <b>quick</b> to build
+            well-designed apps, without code or design skills.
           </p>
         </div>
         <!--Right Col-->
@@ -302,10 +303,61 @@
       document.addEventListener('scroll', updateHeader);
     </script>
     <script>
-      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="mMUaGJpA8GPLNgy8FhMDEYWUFmduMz9U";;analytics.SNIPPET_VERSION="4.15.3";
-      analytics.load("mMUaGJpA8GPLNgy8FhMDEYWUFmduMz9U");
-      analytics.page('signup-landing');
-      }}();
+      !(function () {
+        var analytics = (window.analytics = window.analytics || []);
+        if (!analytics.initialize)
+          if (analytics.invoked) window.console && console.error && console.error('Segment snippet included twice.');
+          else {
+            analytics.invoked = !0;
+            analytics.methods = [
+              'trackSubmit',
+              'trackClick',
+              'trackLink',
+              'trackForm',
+              'pageview',
+              'identify',
+              'reset',
+              'group',
+              'track',
+              'ready',
+              'alias',
+              'debug',
+              'page',
+              'once',
+              'off',
+              'on',
+              'addSourceMiddleware',
+              'addIntegrationMiddleware',
+              'setAnonymousId',
+              'addDestinationMiddleware',
+            ];
+            analytics.factory = function (e) {
+              return function () {
+                var t = Array.prototype.slice.call(arguments);
+                t.unshift(e);
+                analytics.push(t);
+                return analytics;
+              };
+            };
+            for (var e = 0; e < analytics.methods.length; e++) {
+              var key = analytics.methods[e];
+              analytics[key] = analytics.factory(key);
+            }
+            analytics.load = function (key, e) {
+              var t = document.createElement('script');
+              t.type = 'text/javascript';
+              t.async = !0;
+              t.src = 'https://cdn.segment.com/analytics.js/v1/' + key + '/analytics.min.js';
+              var n = document.getElementsByTagName('script')[0];
+              n.parentNode.insertBefore(t, n);
+              analytics._loadOptions = e;
+            };
+            analytics._writeKey = 'mMUaGJpA8GPLNgy8FhMDEYWUFmduMz9U';
+            analytics.SNIPPET_VERSION = '4.15.3';
+            analytics.load('mMUaGJpA8GPLNgy8FhMDEYWUFmduMz9U');
+            analytics.page('signup-landing');
+          }
+      })();
     </script>
   </body>
 </html>
